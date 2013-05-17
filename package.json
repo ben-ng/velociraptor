@@ -2,7 +2,7 @@
   "author": "benng",
   "name": "velociraptor",
   "description": "Asset management tool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "git://github.com/ben-ng/velociraptor.git"
   },
