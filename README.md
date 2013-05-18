@@ -4,11 +4,17 @@ An asset compiler for Node.js
 
 ##Command-line Usage
 ```bash
-// Compile from ./assets to ./tmp
-// without minification
+# Compile from ./assets to ./tmp
+# without minification
 velociraptor ./assets ./tmp
 
-// Compiling with minification
+# Compiling: /somepath/assets
+#      into: /somepath/tmp
+#            without minification
+# Compiled 2 packages from 7 sources
+# Copied 4
+
+# Compiling with minification
 velociraptor -m ./assets ./tmp
 ```
 
