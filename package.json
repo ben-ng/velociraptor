@@ -1,9 +1,18 @@
 {
-  "author": "benng",
+  "author": "Ben Ng <me@benng.me> (http://benng.me)",
   "name": "velociraptor",
-  "description": "Asset management tool",
-  "version": "0.0.5",
+  "description": "Asset management tool for Node.js",
+  "keywords": [
+    "asset",
+    "pipeline",
+    "build",
+    "make",
+    "rake",
+    "jake"
+  ],
+  "version": "0.0.6",
   "repository": {
+    "type": "git",
     "url": "git://github.com/ben-ng/velociraptor.git"
   },
   "main": "./lib/main",
