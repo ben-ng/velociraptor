@@ -24,7 +24,7 @@ tests = {
       assert.strictEqual(results.packages,2);
       assert.strictEqual(results.packageSources,7);
       assert.strictEqual(results.minified,false);
-      assert.strictEqual(results.copied,4);
+      assert.strictEqual(results.copied,3);
       next();
     })
   },
@@ -34,7 +34,7 @@ tests = {
       assert.strictEqual(results.packages,2);
       assert.strictEqual(results.packageSources,7);
       assert.strictEqual(results.minified,true);
-      assert.strictEqual(results.copied,4);
+      assert.strictEqual(results.copied,3);
       next();
     })
   }
