@@ -1,6 +1,6 @@
 #Velociraptor
 
-Node.js asset compiler that supports JavaScript, CSS and LESS.
+Node.js asset compiler that supports JavaScript, Handlebars, CSS and LESS.
 
 ##What It Does
 Velociraptor will compile assets in a `source` directory and dump them into an `output` directory.
@@ -21,10 +21,18 @@ Velociraptor will compile assets in a `source` directory and dump them into an `
     "js/jquery.js",
     "js/bootstrap.js",
     "js/core/core.js",
+    {
+      "dir": "templates",
+      "type": "handlebars"
+    },
     "js/config/init.js"
   ]
 }
+
 ```
+
+###Handlebars
+To precompile, put your templates in a directory and Velociraptor will recursively discover your templates. Note the special syntax in `bundles.json` -- you must define a directory, not the individual files.
 
 ##Command-line Usage
 ```bash
