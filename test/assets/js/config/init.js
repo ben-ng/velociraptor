@@ -6,7 +6,7 @@
  *  pass an array of model names into the method
  *  below:                                         */
 
-// geddy.io.addListenersForModels();
+geddy.io.addListenersForModels();
 
 /*
  *  example:

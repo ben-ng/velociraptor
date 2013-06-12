@@ -8,6 +8,10 @@
     "js/jquery.js",
     "js/bootstrap.js",
     "js/core/core.js",
+    {
+      "dir": "templates",
+      "type": "handlebars"
+    },
     "js/config/init.js"
   ]
 }
