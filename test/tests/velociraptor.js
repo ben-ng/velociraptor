@@ -18,22 +18,22 @@ source = path.resolve(__dirname, source);
 output = path.resolve(__dirname, output);
 
 tests = {
-  'test minify compilation': function(next) {
-    Velociraptor.compile(source, output, {minify:true}, function(err, results) {
-      assert.strictEqual(err, null, err);
-      assert.strictEqual(results.packages,2);
-      assert.strictEqual(results.packageSources,8);
-      assert.strictEqual(results.minified,true);
-      assert.strictEqual(results.copied,3);
-      next();
-    })
-  },
   'test default compilation': function(next) {
     Velociraptor.compile(source, output, function(err, results) {
       assert.strictEqual(err, null, err);
       assert.strictEqual(results.packages,2);
       assert.strictEqual(results.packageSources,8);
       assert.strictEqual(results.minified,false);
+      assert.strictEqual(results.copied,3);
+      next();
+    })
+  },
+  'test minify compilation': function(next) {
+    Velociraptor.compile(source, output, {minify:true}, function(err, results) {
+      assert.strictEqual(err, null, err);
+      assert.strictEqual(results.packages,2);
+      assert.strictEqual(results.packageSources,8);
+      assert.strictEqual(results.minified,true);
       assert.strictEqual(results.copied,3);
       next();
     })
