@@ -29,7 +29,7 @@
     "commander": "1.1.x",
     "utilities": "0.0.x",
     "jake": "0.5.x",
-    "universal-jst": "1.0.x"
+    "universal-jst": "1.0.4"
   },
   "devDependencies": {},
   "optionalDependencies": {},
